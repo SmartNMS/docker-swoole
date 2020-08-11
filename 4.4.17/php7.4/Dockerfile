@@ -1,12 +1,12 @@
 #
-# docker build -t smartnms/swoole:4.4.15-7.4 .
+# docker build -t smartnms/swoole:4.4.17-7.4 .
 #
 FROM php:7.4
 
 LABEL maintainer="wingsun97@qq.com"
 
 # Version
-ENV SWOOLE_VERSION 4.4.15
+ENV SWOOLE_VERSION 4.4.17
 
 # Tools and Libs
 RUN apt-get update \
