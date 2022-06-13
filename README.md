@@ -1,5 +1,8 @@
 # Supported tags and respective Dockerfile links
-- [4.4.25-php7.4, 4.4.25, latest](https://github.com/SmartNMS/docker-swoole/tree/master/4.4.25/php7.4)
+- [4.8.10-8.1, 4.8.10, latest](https://github.com/SmartNMS/docker-swoole/tree/master/4.8.10/php8.1)
+- [4.8.10-7.4](https://github.com/SmartNMS/docker-swoole/tree/master/4.8.10/php7.4)
+- [4.8.8-7.4, 4.8.8](https://github.com/SmartNMS/docker-swoole/tree/master/4.8.8/php7.4)
+- [4.4.25-php7.4, 4.4.25](https://github.com/SmartNMS/docker-swoole/tree/master/4.4.25/php7.4)
 - [4.4.17-php7.4, 4.4.17](https://github.com/SmartNMS/docker-swoole/tree/master/4.4.17/php7.4)
 - [4.4.15-php7.3](https://github.com/SmartNMS/docker-swoole/tree/master/4.4.15/php7.3), [4.4.15-php7.4, 4.4.15](https://github.com/SmartNMS/docker-swoole/tree/master/4.4.15/php7.4)
 
