@@ -28,7 +28,7 @@ docker-compose run --rm swoole php -m
 
 ## 3. Install and start Hyperf
 ```bash
-docker-compose run --rm swoole composer create-project hyperf/hyperf-skeleton
+docker-compose run --rm swoole composer create-project hyperf/hyperf-skeleton app
 docker-compose run --rm swoole php bin/hyperf.php start
 ```
 
@@ -75,7 +75,7 @@ ENV TERM            xterm-color
 ENV SWOOLE_VERSION 4.8.10
 
 # Install tools
-# RUN apt-get update && apt-get install -y --no-install-recommends git curl unzip
+RUN apt-get update && apt-get install -y --no-install-recommends git
 
 # Extract php source
 RUN docker-php-source extract
@@ -96,8 +96,8 @@ RUN apt-get update && apt-get install -y \
 # Install PECL redis extension
 RUN pecl install redis && docker-php-ext-enable redis
 
-# Install pdo_mysql bcmath sockets extensions
-RUN docker-php-ext-install pdo_mysql bcmath sockets
+# Install pdo_mysql, bcmath, sockets, pcntl extensions
+RUN docker-php-ext-install pdo_mysql bcmath sockets pcntl
 
 # Install swoole extension
 RUN curl -fsSL https://github.com/swoole/swoole-src/archive/v${SWOOLE_VERSION}.tar.gz -o swoole.tar.gz \
@@ -151,6 +151,7 @@ libxml
 mbstring
 mysqlnd
 openssl
+pcntl
 pcre
 PDO
 pdo_mysql
